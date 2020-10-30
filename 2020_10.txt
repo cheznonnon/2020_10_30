@@ -1,0 +1,208 @@
+
+
+----------==========----------==========----------==========----------
+
+
+"Eat Your Own Catfood."
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2020/10/30
+
+
+BUGFIX
+
+
+	win32/win_txtbox/07_metrics.c
+		n_win_txtbox_metrics_maxwidth()
+			OLD : use older .cell_pxl_sy
+			NEW : fixed
+	win32/win.c
+		n_win_is_hovered()
+			OLD : invisible window is included
+			NEW : fixed
+	win32/win_scrollbar.c
+		n_win_scrollbar_on_drag() : clamp
+			OLD : misbehave
+			NEW : fixed
+
+	CatPad
+		Font Chooser : larger font to smaller font
+			OLD : misbehave
+			NEW : fixed
+			[x] : n_win_txtbox_metrics_maxwidth() causes
+	Nekomimi Nina
+		plumber's sliding
+			OLD : broken
+			NEW : fixed
+	nmidi
+		config note : when scroll thumb is clicked
+			OLD :  rapid-fire
+			NEW : single-fire
+	Nonnon Paint
+		Grabber : when arrow button is pressed
+			OLD : no response occurs in some cases
+			NEW : fixed
+			[?] : n_win_is_hovered() causes
+			[x] : when Multi-Layer has been implemented
+	OrangeCat
+		Item View : when an item is added/removed
+			OLD : not faded
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	game/map_chara.c
+		n_game_map_chara_wall()
+			NEW : wall detector
+
+	neutral/bmp/transform.c
+		n_bmp_scaler_big_pixelart() : when zoom is 2
+			NEW : more beautiful than older
+
+	Nekomimi Nina
+		ride-on-chicks
+			NEW : you can ride on chics
+		chicks
+			OLD :  5
+			NEW : 15
+			[!] : heavier than older
+		dokan feature
+			NEW : graphics are more Super Mario-like
+		zoom is 2
+			NEW : more beautiful than older
+	Nonnon Paint
+		INI
+			NEW : "thread" available
+			[!] : default is ON
+			[!] : use if you don't want to use multi-thread
+		Resizer : Resize Option : Pixelart x2
+			NEW : more beautiful than older
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2020/10/20
+
+
+BUGFIX
+
+
+	neutral/bmp/filter.c
+		some modules
+			OLD : misbehave in some cases
+			NEW : fixed
+			[!] : cache mechanism causes
+			[!] : slower than older
+	neutral/bmp/transform.c
+		n_bmp_scaler_big_pixelart() : when "zoom" is 1
+			OLD : do
+			NEW : do not
+
+	win32/win_statusbar_ownerdraw.c
+		Classic Theme : n_win_statusbar_od_draw() : when sizegrip is used
+			OLD : inaccurate behavior
+			NEW : fixed
+			[x] : BUGFIX @ 2020/10/10
+
+	Nekomimi Nina
+		graphics : when character is changed
+			OLD : broken
+			NEW : fixed
+			[!] : pixelart scaling algorithm causes
+		transition #1
+			OLD : N_GAME_TRANSITION_NOTHING is used
+			NEW : fixed
+		transition #2
+			OLD : there are unused effects
+			NEW : fixed
+		baloon animation
+			OLD : too fast
+			NEW : fixed
+		chicks
+			OLD : too fast
+			NEW : fixed
+		horizontal lifts : turn right
+			OLD : not accurate
+			NEW : fixed
+	nmemo
+		saved .txt
+			OLD : non-unicode
+			NEW : utf-8
+	Nonnon Paint
+		Multi-Layer : Whole Grab : Pen and Fill : basic filters
+			OLD : internal confusion
+			NEW : fixed
+			[!] : access violation or heap curruption or overrun occur
+			[!] : I cannot back-port this, don't use until 30 Oct release
+		Pen : when started : menu
+			OLD : internal confusion
+			NEW : fixed
+		Resizer : filters
+			OLD : misbehave in some cases
+			NEW : fixed
+	OrangeCat
+		scrollbar : menu is used : refresh
+			OLD : delayed
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	Nekomimi Nina
+		dokan : when use many times
+			NEW : faster than older
+	LINE MASHER 2
+		difficulty
+			NEW : re-tuned
+			[!] : easier than older
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2020/10/10
+
+
+BUGFIX
+
+
+	win32/win_statusbar_ownerdraw.c
+		n_win_statusbar_od_draw() : when sizegrip is used
+			OLD : text is not clipped
+			NEW : fixed
+
+	Nonnon Paint
+		Multi-Layer : Whole Grab : menu
+			OLD : on
+			NEW : off
+			[?] : internal confusion will occur
+
+
+NEW_FEATURE
+
+
+	Nonnon Paint
+		Multi-Layer : Whole Grab : Tab key
+			NEW : whole preview on/off
+		Multi-Layer : Menu
+			NEW : "Whole Preview" available
+
+
+----------==========----------==========----------==========----------
+
