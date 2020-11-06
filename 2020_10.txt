@@ -27,6 +27,9 @@ BUGFIX
 			NEW : fixed
 		Multi-Layer : Resizer : when applied
 			OLD : crash in some cases
+		Nonnon Apps : shortcut support
+			OLD : you cannot drop ".LNK" onto "Nonnon Paint.lnk"
+			NEW : fixed
 
 
 ----------==========----------==========----------==========----------
