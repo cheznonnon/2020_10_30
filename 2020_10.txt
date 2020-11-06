@@ -12,6 +12,29 @@
 Change Log
 
 
+2020/10/30 #1 : 2020/11/06
+
+
+BUGFIX
+
+
+	Nonnon Paint
+		Multi-Layer : Whole Preview
+			OLD : #0 is not used
+			NEW : fixed
+		Resizer : "Whole Preview"
+			OLD : not supported
+			NEW : fixed
+		Multi-Layer : Resizer : when applied
+			OLD : crash in some cases
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2020/10/30
 
 
